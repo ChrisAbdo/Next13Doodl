@@ -9,6 +9,12 @@ import Image from 'next/image';
 
 // import Draw from './components/Draw';
 
+declare global {
+  interface Window {
+    ethereum: any;
+  }
+}
+
 function page() {
   const [account, setAccount] = useState('');
   const [web3Handler, setWeb3Handler] = useState<Web3>();

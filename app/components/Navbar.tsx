@@ -5,6 +5,12 @@ import Web3 from 'web3';
 import { useEffect, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 
+declare global {
+  interface Window {
+    ethereum: any;
+  }
+}
+
 const Navbar = () => {
   const [account, setAccount] = useState('');
   const [web3Handler, setWeb3Handler] = useState<Web3>();
