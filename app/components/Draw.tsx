@@ -11,7 +11,7 @@ const Draw = () => {
   const [lazyRadius, setLazyRadius] = useState(0);
 
   // Ref for the CanvasDraw component
-  const saveableCanvas = createRef();
+  const saveableCanvas: any = createRef();
 
   return (
     <div>
